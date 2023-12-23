@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #9df5e9;
+    margin: auto;
+}
+
+main{
+    background: #faebd7;
+    margin: -8px 180px;
+}
+
+header{
+    background-image: linear-gradient(#018b79, #12486b);
+    color: #22092c;
+    text-align: center;
+    padding: 3px;
+}
+
+header > h1{
+    font-family: fantasy;
+    font-weight: lighter;
+    font-size: 2.5em;
+}
+header > h4{
+    color: #4de4cd;
+}
+
+header > nav{
+    text-align: left;
+}
+
+header > nav > a{
+    color: #07ebc9;
+    margin-right: 20px;
+    text-decoration: none; 
+    font-weight: bold;   
+}
+
+header > nav > a:hover{
+    background: #07ebc9;
+    color: #22092c;
+}
+
+section{
+    margin: auto;
+}
+
+section > h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: #22092c;
+    padding: 20px 0px 5px 0px;
+    margin: 10px auto 10px 15px;
+}
+
+section > p{
+    margin: auto 15px auto 15px;
+    text-align: justify;
+    text-indent: 25px; /*Usado para dar espaçamento do travessão*/
+}
+
+section > h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #22092c;
+    padding: 20px 0px 5px 0px;
+    margin: 10px auto 10px 15px;
+}
+
+section > p > a{
+    color:#22092c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section > p > a:hover{
+    background: #07ebc9;
+}
+
+img#um{
+    margin: 0px 90px;
+}
+
+p#dois{
+    text-align: center;
+}
+
+img#tres{
+    padding: 20px;
+    margin: 0px 80px;
+}
+
+img#cinco{
+    margin: 0px 340px;
+}
+
+#para{
+    margin-bottom: 30px;
+}
+
+section#seis{
+    background: #157e70;
+    padding: 20px;
+    margin: 0px 50px;
+}
+
+section#seis > a{
+    margin: 0px 300px
+}
+
+article > h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #22092c;
+    padding: 20px 0px 5px 0px;
+    margin: 10px auto 10px 15px;
+}
+
+article#sete{
+    background: aquamarine;
+    margin: 0px 50px 20px;
+}
+
+article > p{
+    margin: auto 15px auto 15px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+article > ul{
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 140px;
+}
+
+article > ul > li{
+    list-style-type: square;
+}
+
+footer{
+    background: #018b79;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+footer > p{
+    text-align: right;
+    margin-right: 20px;
+    color:#22092c;
+    font-weight: bolder;
+}

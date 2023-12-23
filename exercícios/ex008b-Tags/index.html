@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="favicon.ico"/>
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+      <h2>Elemento &lt;CODE&gt; - Fonte Monoespaçada</h2>
+        <p>Código-Fonte é o conjunto de palavras ou símbolos escritos de forma ordenada, contendo instruções
+            em uma das Linguagens de Programação existentes, de maneira lógica. <br>
+           Exemplo: <br>
+            O Comando <strong>document.getElementById('teste')</strong> é um Código-Fonte escrito em JavaScript.</p>
+        <p>Escrito com <strong>Fonte Monoespaçada</strong>, <code><mark>document.getElementById('teste')</mark></code>, todas as letras possuem o mesmo 
+            espaçamento.</p>
+
+      <h2>Elemento &lt;PRE&gt;</h2>
+         <p>A Tag &lt;pre&gt; é utilizada para representar texto pré-formatado. <br>
+            O texto é exibido da mesma maneira em que o texto original foi disposto no arquivo ou no Editor de 
+             Código Fonte.</p>
+         <p>Exemplo:
+            <pre>
+                <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0
+                    print(f'O número {num} é PAR')
+                else:
+                    print(f'O número {num} é IMPAR')
+                print('fim do programa')
+                </code>
+            </pre>
+         </p>
+
+      <h2>Elemento &lt;Q&gt; - Citações</h2>
+         <p>A Tag &lt;Q&gt; indica que o texto é uma pequena citação. Coloca o texto entre aspas.</p>
+         <p>Exemplo: <br>
+            Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+      <h2>Elemento &lt;BLOCKQUOTE&gt;Citações Completas ou Longas</h2>
+         <p>A Tag &lt;BLOQKQUOTE&gt; indica que o texto incluído é uma Citação Longa. <br>
+            Usada em citações de textos de livros, vídeos, fotos e outros. 
+            Nota-se um RECUO do texto envolto pela Tag &lt;blockquote&gt;.</p>
+         <p>Exemplo:
+            Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+            <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_All_In_One_For_Dummie/-LdlRI0fT_UC?hl=pt-BR&gbpv=1&dq=html&pg=PA25&printsec=frontcover">
+                A diferença entre elementos inline e um bloco de  texto é importante. <br>
+                Os elementos HTML nesse capítulo descrevem os Blocos de Texto.
+            </blockquote>
+         <p>Pode-se adicionar ao &lt;blockquote&gt; o <mark>Parâmetro CITE</mark>, que também é uma TAG, serve para definir <br>
+             uma referência, principalmente, para adicionar a URL de onde foi extraído o texto referido, ou seja, 
+             indica a fonte.</p>
+         <p>O Parâmetro CITE somente será visualizado pelos mecanismos de busca do navegador.
+            Não aparecerá nada e, não será visível no site.</p>
+      <h2>Elemento &lt;ABBR&gt; - Abreviações</h2>
+         <p>Representa uma Abreviação e, opcionalmente, fornece uma descrição  completa para a abreviação.</p>
+         <p>Exemplo: <br>
+            Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e CSS. Estou amando!</p> 
+         <p>Note que só será visível a descrição da abreviação ao se passar o mouse por cima.</p>  
+      <h2>Elemento &lt;BDO&gt; - Texto Invertido</h2>
+         <p>Bidirectional Override é usado para substituir a direcionalidade atual do texto. <br>
+            RTL = Right to Left ou LTR - Left to Right.</p> 
+         <p>Exemplo com RTL: <br>
+            <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+
+</body>
+</html>

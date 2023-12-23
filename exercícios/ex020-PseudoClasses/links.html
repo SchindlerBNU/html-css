@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="favicon.ico"/>
+    <title>LINKS</title>
+
+<style>
+    body{
+        background: rgb(196, 183, 160);
+    }
+    /*Configuração Genérica do Elemento <a>*/
+   a{
+    color: rgb(2, 78, 2);
+    text-decoration: none;
+    font-weight: bold;
+   }
+   /*Configuração Visitada do Elemento <a>*/
+   a:visited{
+    color: darkblue;
+   }
+   /*Configuração Passar por Cima com o Mouse no Elemento <a>*/
+   a:hover{
+    color: black;
+    text-decoration: underline;
+   }
+
+   a:active{
+    color: orangered;
+   }
+
+   /*Uma forma de Estilizar com Pseudo-Elementos
+   a::before{
+    content: '⇒';
+    color: darkgoldenrod;
+   }
+
+   a::after{
+    content: '✓';
+    text-decoration: none; estilização não funciona
+    font-weight: normal;
+    color: darkgoldenrod;
+   }
+   */
+
+   /*Outra forma de Estilizar com Pseudo-Elementos*/
+
+   .especial{
+    background: darkgrey;
+   }
+
+   .especial::before{
+    content: '☞ ';
+   }
+
+  .especial::after{
+    content: ' ☑'
+  }
+</style>
+
+</head>
+<body>
+    <h1>Personalizando LINKS</h1>
+      <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a class="especial" href="https://youtube.com/cursoem video/">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+      </ul>
+</body>
+</html>

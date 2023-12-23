@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="favicon.ico"/>
+    <title>Gradiente em CSS</title>
+
+<style>
+    *{
+        height: 100%
+    }
+
+    h1{
+        text-align: center;
+        color: rgb(255, 72, 0);
+        background-color: silver;
+        height: 40px;
+    }
+
+   #um{
+        background-image: linear-gradient(to right, #D8D7DE, #A977E0, #48c9a9);
+        width: 90%;
+        height: 150px;
+        margin-left: 65px;
+    }
+
+    #um p{
+        color: rgba(255, 255, 255, 0.212);
+        text-align: center;
+        padding: 60px;
+    }
+
+    #dois{
+        background-image: linear-gradient(30deg, #B66AE6, #FF4645, #17012F, #581001, #FF9006, #4A2269, #300459);
+        width: 90%;
+        height: 150px;  
+        margin-left: 65px;
+    }
+
+    #dois p{
+        color: #d8d7de3a;
+        text-align: center;
+        padding: 60px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    <div id="um"><p>Gradiente 1</p></div>
+    <div id="dois"><p>INSTAGRAM</p></div>
+</body>
+</html>

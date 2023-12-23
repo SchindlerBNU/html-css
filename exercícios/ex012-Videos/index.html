@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="imagem/favicon.ico"/>
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+      <p>Esse Vídeo está hospedado no meu próprio servidor.</p>
+      <!--1ª Forma, pouco usada
+      <video src="midia/Video1.webm" width="500" controls></video>
+      -->
+
+      <!--2ª Forma, uso mais viável-->
+      <video width="500" poster="imagem/vi2.jpg" controls loop>
+        <source src="midia/video1.mp4" type="video/mp4">
+        <source src="midia/Video1.webm" type="video/webm">
+        <source src="" type="video.m4v">
+        <source src="" type="video.ogg">
+         <p>Seu navegador não tem compatibilidade com repordução de vídeos.</p>
+      </video>
+
+    <h1>Inserindo Vídeos do YouTube</h1>
+      <p>Este vídeo está hospedado no YouTube, apenas o link foi copiado.</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=JLgdCmNdavoO2uCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeos do VIMEO</h1>
+      <p>Este vídeo está hospedado no Vimeo, apenas o link o foi copiado.</p>
+    <iframe src="https://player.vimeo.com/video/360283987?h=a22538c1dd" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <a href="https://vimeo.com/360283987"></a><a href="https://vimeo.com/megacomputeur"></a><a href="https://vimeo.com"></a>.
+  </body>
+</html>

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+body{
+        background-color: #79aa6b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: #c9b2a2;
+    text-align: center;
+    color: #162a10;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav{
+    background-color: #162a10;
+    padding: 5px;
+    box-shadow: 2px 2px 4px 2px #08220162;
+    }
+
+nav > a{
+    color: #c9b2a2;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 45px; /*Separa os links com espaços*/
+}
+
+nav > a:hover{
+    background-color: black;
+}
+
+main{
+    background-color: #e7ffde;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    /*border-radius: 5px 30px 40px 10px;*/
+    /*border-radius: 20px 0px;*/
+    box-shadow: 2px 2px 4px 2px #4849475e;
+}
+
+h2{
+    text-align: center;
+    color: #162a10;
+}
+
+#Assuntos > article{
+    background-color: #a7a1a1;
+}
+
+article{
+    background-color: #b6a9a0;
+    padding: 5px;
+    border-radius: 20px;
+}   
+
+article > p{
+    text-align: center;
+}
+
+article > aside{
+    background-color: #e9dfd8;
+    padding: 0.5px 20px;
+    margin-right: 990px;
+}
+footer{
+    background-color: #808080;
+    padding: 4px;
+    margin: 0px;
+    text-align: right;
+    text-shadow: 2px 1px 0.5px black;
+    color: #0d6e79;
+}
+
+footer > p{
+    margin-right: 50px;
+    /*Foi zerado os margins top e bottom para que o padding do <p> footer funcione corretamente*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div#bola{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(1, 39, 1);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}

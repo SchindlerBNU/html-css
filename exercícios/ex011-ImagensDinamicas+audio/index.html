@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="favicon.ico" />
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+      <p>Abra esse Site em vários dispositivos diferentes, ou aumente e diminua <br>
+         o tamanho da tela do navegador.</p>
+
+      <picture>
+        <source media="(max-width: 700px)" srcset="imagens/i3p.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="imagens/i2m.jpg" type="image/jpg"/> 
+        <img src="imagens/i2g.jpg" alt="Imagem Flexível"/>
+      </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+      <p>Aprendendo a repproduzir áudios em HTML5.</p>
+      
+      <audio preload="metadata" autoplay controls loop>
+         <source src="Audios/DreamIT.mp3" type="audio/mpeg">
+         <source src="arquivo.ogg" type="audio/ogg">
+         <source src="arquivo.wav" type="audio/wav">
+         <p>Se não baixou nenhum áudo, infelizmente o navegador não reproduz áudio.<a href="imagens/DreamIT.mp3">
+          Clique aqui para baixar o arquivo MP3</a></p>
+      </audio>
+</body>
+</html>

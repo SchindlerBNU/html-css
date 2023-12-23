@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="favicon.ico"/>
+    <title>Borda Personalizada</title>
+
+<style>
+    h1{
+        text-align: center;
+        padding: 10px;
+        border: 20px solid transparent; /*ou cor*/
+        border-image-source: url('borda.jpg'); /*instala a imagem*/
+        border-image-slice: 94; /*fatia/estica a imagem*/
+        /*border-image-repeat: repeat; repete a imagem*/
+        border-image-repeat: stretch; /*estica/puxa a imagem*/
+        /*SHORTHAND BORDER-IMAGE:
+          border-image: source slice repeat = url('') valor(20 ou outro) repeat ou stretch*/
+    }
+
+h2{
+    text-align: center;
+    padding: 10px;
+    border: 10px solid black;
+    border-image-source: url('borda1.jpg');
+    border-image-slice: 106;
+    border-image-repeat: stretch; /*repeat*/
+}
+
+</style>
+</head>
+<body>
+    <h1>Teste de Borda Personalizada</h1>
+
+    <h2>Teste de Borda Personalizada</h2>
+</body>
+</html>
