@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imge/x-icon" href="imagens/favicon.ico">
+    <title>Centralização Vertical</title>
+
+<style>
+     #container{
+        position: relative;
+        height: 94vh; /*preenche o viewport inteiro*/
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        background-color: purple;
+        padding: 10px;
+     }
+
+     #conteudo{
+        position: absolute;
+        height: 200px;
+        width: 350px;
+        /*margin: auto;*/
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        background-color: yellow;
+        left: 50%; /*200px;*/
+        top: 50%; /*200px;*/
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+        text-align: center;
+        color: antiquewhite;
+    }
+</style>
+
+</head>
+
+<body>
+    <section id="container">
+      <h1>CENTRALIZAÇÃO COM TRANSFORM: TRANSLATE()</h1>
+        <article id="conteudo">
+
+        </article>
+    </section>    
+</body>
+
+</html>
