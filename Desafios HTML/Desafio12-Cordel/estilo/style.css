@@ -64,15 +64,33 @@ section.normal{
     color: black; 
 }
 
+section > p{
+    padding-bottom: 2em; /*para dar espaçamento entre os parágrafos das sections normais*/
+}
+
 section.imagem{
     background-color: rgb(48, 43, 43);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.596);
+    background-size: cover; /*diminui um pouco a imagem*/
+    background-attachment: fixed; /*fixa a imagem e o resto do site rola sobre ela*/
 }
+
 /*para evitar da imagem impossibilitar a leitura dos textos*/
 section.imagem > p{
     display: inline-block;
-    background-color: rgb(34, 30, 30);
+    background-color: rgba(34, 30, 30, 0.5);
     padding: 8px;
+    text-shadow: 2px 2px 0 black;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; 
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer{
@@ -84,13 +102,14 @@ footer{
 }
 
 footer > p{
-    color:rgb(27, 1, 16);
+    color:rgb(17, 0, 10);
     font-weight: bold;
     font-size: 2vw;
 }
 
 #footer {
-    color:rgb(27, 1, 16);
+    color:rgb(17, 0, 10);
+    text-shadow: 2px 2px 2px black;
 }
 
 #footer:hover{
