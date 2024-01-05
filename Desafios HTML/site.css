@@ -20,6 +20,19 @@ h1{
     text-shadow: 1px 1px 6px rgb(2, 2, 112);
     padding: 10px;
 }
+
+nav a{
+    margin-right: 8px;
+    margin-left: 380px;
+    text-decoration: none;
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    color: black;
+    background: #1eff05;
+    border: 2px solid #1eff05;
+    border-radius: 5px;
+    padding: 10px;
+}
 /*
 .tres{
     background-color: #ff00ff;
@@ -54,14 +67,19 @@ h1{
     border-radius: 5px;
 }
 
-.icon a{
-    text-decoration: none;
-    color: black;
+footer > section{
+    background-color: black; 
+    color: #1eff05;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin-inline-start: 1200px;
+    margin-right: 73px;
+    padding: 10px;
 }
 
-.footer{
-    margin-top: 450px;
+footer{
+    margin-top: 403px;
     background-color: #1eff05;
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
 }
