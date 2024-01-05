@@ -11,21 +11,18 @@
     }
 
     table{
-        width: 400px;
+        width: 300px;
+        height: 300px;
         border-collapse: collapse;
     }
 
-    .linha{
-        background-color: aqua;
+    td{
+        border: 2px solid black;
+        vertical-align: top;
     }
 
-    td{ /*configura cada célula*/
-        border: 2px solid darkred;
-        padding: 8px;
-    }
-
-    .dado{
-        background-color: yellow;
+    .numero{
+        text-align: right;
     }
 </style>
 </head>
@@ -38,32 +35,25 @@
             <td>C1</td>  <!--3ª Coluna-->
         </tr>            <!--Fim da 1ª Linha-->
 
-        <tr class="linha">             <!--2ª Linha-->
+        <tr>             <!--2ª Linha-->
             <td>A2</td>  <!--1ª Coluna-->
             <td>B2</td>  <!--2ª Coluna-->
-            <td>C2</td>  <!--3ª Coluna-->
+            <td class="numero">C2</td>  <!--3ª Coluna-->
         </tr>            <!--Fim da 2ª Linha-->
         
         <tr>             <!--3ª Linha-->
             <td>A3</td>  <!--1ª Coluna-->
             <td>B3</td>  <!--2ª Coluna-->
-            <td>C3</td>  <!--3ª Coluna-->
+            <td class="numero">C3</td>  <!--3ª Coluna-->
         </tr>
         
-        <tr>                           <!--4ª Linha-->
-            <td>A4</td>               <!--1ª Coluna-->
-            <td class="dado">B4</td>  <!--2ª Coluna-->
-            <td>C4</td>               <!--3ª Coluna-->
+        <tr>             <!--4ª Linha-->
+            <td>A4</td>  <!--1ª Coluna-->
+            <td>B4</td>  <!--2ª Coluna-->
+            <td>C4</td>  <!--3ª Coluna-->
         </tr>
-
-        <tr>                           <!--5ª Linha-->
-            <td>A5</td>  <!--1ª Coluna-->
-            <td>B5</td>  <!--2ª Coluna-->
-        </tr>
-
-        <tr>                           <!--6ª Linha-->
-            <td>A6</td>  <!--1ª Linha-->
-        </tr>
+        
+    
       </table>
 </body>
 </html>
