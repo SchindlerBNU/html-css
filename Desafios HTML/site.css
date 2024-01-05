@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+h1{
+    text-align: center;
+}
+
+.um{
+    background-color: #1eff05;
+    text-align: center;
+    padding: 20px;
+}
+
+.dois{
+    background-color: #37023a;
+    text-align: center;
+    padding: 20px;
+}
+
+.tres{
+    background-color: #ff00ff;
+    text-align: center;
+    padding: 20px;
+}
+
+.quatro{
+    background-color: #580443;
+    text-align: center;
+    padding: 20px;
+}
