@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/x-icon" href="favicon.ico">
+    <title>Tabelas</title>
+<style>
+
+    h2{
+        font-size: 2.3em;
+        background-color: slateblue;
+        width: 600px;
+        transform: translate(385px, 0px);
+    }
+
+    table{
+        width: 500px;
+        transform: translate(435px, 10px);
+    }
+
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: rgb(248, 248, 2);
+    }
+
+    th, td{
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    th{
+        /*background-color: slateblue;*/
+        color: black;
+        font-size: 1.3em;
+    } 
+
+    col.cnome{
+        background-color: chartreuse;
+    }
+    
+    col.cgrupo{
+        background-color: rgb(196, 84, 84);
+    }
+
+    col.cprof{
+        background-color: rgb(181, 0, 253);
+    }
+    
+</style>
+</head>
+<body>
+    <h2>Tabela com Agrupamento de Coluna</h2>
+    <table>
+     <colgroup> <!--nº de colunas = nº de cols-->
+       <col class="cnome">
+       <col class="cgrupo" span="2">        <!--antes era col class csexo,-->        
+       <!--aqui havia o col class cidade, agora o csexo e o cidade foram substituidos por cgrupo-->
+       <col class="cprof">
+     </colgroup>
+      <caption>COLGROUP</caption>
+        <thead>
+           <tr>
+               <th>Nome</th>
+               <th>Sexo</th>
+               <th>Idade</th>
+               <th>Profissão</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Ana Maria</td>
+               <td>F</td>
+               <td>25</td>
+               <td>Jornalista</td>
+            </tr>
+            <tr>
+               <td>Cláudio</td>
+               <td>M</td>
+               <td>28</td>
+               <td>Programador</td>
+            </tr>
+            <tr>
+                <td>André</td>
+                <td>M</td>
+                <td>55</td>
+                <td>Agente de Trânsito</td>
+            </tr>
+            <tr>
+                <td>Sibila</td>
+                <td>F</td>
+                <td>55</td>
+                <td>Aposentada</td>
+            </tr>
+            <tr>
+                <td>Alessandra</td>
+                <td>F</td>
+                <td>33</td>
+                <td>Psicóloga</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>M</td>
+                <td>61</td>
+                <td>Engenheiro Civil</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
