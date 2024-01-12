@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>iFRAMES</title>
+<style>
+    body{
+        background-color: darkkhaki;
+    }
+
+    h2{
+        text-align: center;
+        background-color: brown;
+        padding: 5px;
+    }
+ 
+    iframe#box{
+        width: 500px;
+        height: 200px;
+        border: 2px solid red;
+    }
+
+    em{
+        color: blue;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: blue;
+    }
+
+    a:hover{
+        background-color: blue;
+        color: darkkhaki;
+        padding: 5px;
+        border-radius: 20px;
+    }
+</style>
+</head>
+<body>
+    <h2>Estudos com iFRAMES</h2>
+     <p>Acessando o site do <a href="https://www.rockcontent.com" target="_blank">Rock Content</a> 
+        de forma normal.</p>
+
+        <br><hr>
+
+     <p>Acessando o site do 
+       <iframe id="box" src="https://www.cursoemvideo.com" frameborder="2" scrolling="no">Curso em Vídeo
+       </iframe>com iframe.</p>
+        <br>
+     <p>É considerado um Quadro inline, pois, está na mesma linha.</p>
+     <p>Existem alguns sites, como o <em>Google</em>, que possuem uma <strong>proteção para que o seu
+            conteúdo não seja exibido dentro de iframes</strong>, por sites de terceiros.
+     </p>
+
+       <br><hr>
+
+     <p>Acessando o site do
+        <iframe src="https://www.google.com" frameborder="0"></iframe>com iframe.</p>
+     <p>Se o acesso por iframe for negado, acesse o <em>Google</em> por esse 
+        <a href="https://www.google.com" target="_blank">Link</a>
+    </p>
+    
+       <br><hr> 
+</body>
+</html>
