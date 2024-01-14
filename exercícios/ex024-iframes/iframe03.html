@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>iFRAMES 3</title>
+<style>
+    body{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(221, 172, 236);     
+    }     
+     
+    ul{
+        list-style-type: none;
+    }
+
+    a{
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        color: rgb(51, 1, 48);
+    }
+    
+    iframe{
+        border: 2px solid rgb(36, 0, 43);
+        width: 80%;
+        height: 400px;
+        text-align: center;
+    }
+
+    iframe > h4{
+        transform: translateX(180px);
+    }
+</style>
+</head>
+<body>
+    <h1>Faça uma escolha!!!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos magnam enim, <br>
+       facilis non beatae excepturi repellat assumenda aut perferendis, adipisci cupiditate <br>
+       soluta odio deleniti architecto hic corrupti officiis nobis. <br>
+    </p>
+
+    <ul>
+       <li><a href="pag01.html" target="tela">Primeira página</a></li>
+       <li><a href="pag02.html" target="tela">Segunda página</a></li>
+       <li><a href="pag03.html" target="tela">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos magnam enim, <br>
+        facilis non beatae excepturi repellat assumenda aut perferendis, adipisci cupiditate <br>
+        soluta odio deleniti architecto hic corrupti officiis nobis. <br>
+    </p>
+
+    <iframe name="tela" srcdoc="<h4>ESCOLHA UMA OPÇÃO A CIMA</h4><img src='folhas-botanicas.jpg' height='340' 
+        width='1030'>">
+        <p>O navegador não é compatível com o iframe</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos magnam enim, <br>
+        facilis non beatae excepturi repellat assumenda aut perferendis, adipisci cupiditate <br>
+        soluta odio deleniti architecto hic corrupti officiis nobis.
+    </p>
+</body>
+</html>
