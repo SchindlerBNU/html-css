@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FORMULÁRIO-2</title>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div{
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>Formulário 02</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" 
+            placeholder="Nome" autocomplete="username">
+        </div>
+        <div>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlenght="15" size="10"
+            placeholder="mín.8 caracteres" autocomplete="current-password">
+        </div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+ <!--NAME é importante para o HTML e PHP.
+     ID é importante para JS e LABEL.
+     no NAME foi usado 'usu' e para o ID foi usado 'iusu' para diferenciar NAME de ID.
+     no LABEL foi usado o valor do ID = 'iusu.'-->   
+
+<!--MINLENGHT é o mínimo de caracteres aceito.
+    MAXLENGHT é o máximo de caracteres aceito.-->
+
+<!--SIZE manipula o tamnho da caixa do input, que mostrará somente o nº escolhido de tamanho.
+    Se o SIZE='10' será mostrado somente 110 caracteres, porém aceitará o tamanho de caracteres que for
+    determinado no MAXLENGHT.-->
+
+<!--PLACEHOLDER é uma dica que se coloca dentro das caixas do input para que o usuário saiba o que deve 
+    ser digitado dentro da caixa de input.-->
+
+<!--AUTOCOMPLETE dentro do FORM pode ser desligado, mas é interessante deixar ativo o AUTOCOMPLETE pois 
+    os navegadores essa propriedade para auxiliar no preenchimento de INPUTS dos usuários.-->
+
+<!--AUTOCOMPLETE dentro dos INPUTS existem opçções para preenchimento automático.
+    Exemplo: AUTOCOMPLETE='USERNAME', AUTOCOMPLETE='CURRENT-PASSWORD' ou 'NEW-PASSWORD'-->
+</body>
+</html>
