@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Formulário-4</title>
+<style>
+    legend{
+        font-weight: bold;
+        transform: translateY(-10px);
+    }
+
+    fieldset{
+        width: 280px;
+        background-color: blueviolet;
+    }
+</style>
+</head>
+<body>
+    <h1>Testes com Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </div>
+                <br>
+            <div>
+                <label for="imail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </div>
+                <br>
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="mobile" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                placeholder="(xx)xxxxx-xxxx" required>
+            </div>
+        </fieldset>
+    <br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <!--Estudar sobre REGEX = Regular Expressions, é chamado pelo PATTERN="^....$"-->
+    <!--Parênteses = \(\d{2}\) e o 2 representa o DDD do telefone-->
+    <!--FIELDSET = Tag para Agrupamentos de outras Tags-->
+    <!--LEGEND serve para inserir um Título ao Fieldset-->
+</body>
+</html>
