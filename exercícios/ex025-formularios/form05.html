@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Formulário-5</title>
+<style>
+    fieldset{
+        width: 350px;
+        border-radius: 15px;
+        background-color: aquamarine;
+        border: 3px solid black;
+    }
+    legend{
+        font-weight: bold;
+        color: blue;
+    }
+
+    div.botao > input{
+        margin-right: 20px;
+        border-radius: 15px;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <h2>Testes com Formulário</h2>
+      <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F" checked><label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Linguagens de Progtamação Favoritas</legend>
+            <input type="checkbox" name="js" id="ijs"> <label for="ijs">JavaScript</label> <br>
+            <input type="checkbox" name="python" id="ipython"> <label for="ipython">Python</label> <br>
+            <input type="checkbox" name="php" id="iphp"><label for="iphp">PHP</label> <br>
+            <input type="checkbox" name="css" id="icss"><label for="icss">CSS</label>
+        </fieldset>
+    <br>
+            <div class="botao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>    
+      </form>
+<!--Relacionar os Objetos com as Caixas Submit = envelopar os Objetos (JavaScript, etc)
+    com LABEL FOR="ijs", o nome descrito no id-->
+<!--Para poder Desmarcar o Borão RADIO = os Objetos deverão ter o mesmo NAME-->
+<!--O Atributo CHECKED ionserido dentro de um INPUT fará com que este Objeto inicie marcado-->
+<!--O VALUE é para o back-end-->
+</body>
+</html>
