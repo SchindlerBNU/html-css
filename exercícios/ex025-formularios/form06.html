@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"/>
+    <title>Formulario-6</title>
+</head>
+<body>
+    <h2>Testes com Formulários</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <div>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+      </div>
+    <br>  
+      <div id="controle">
+        <label for="inivel">Controle Deslizante:</label>
+        <input type="range" name="nivel" id="inivel" min="0" max="20" value="10">
+      </div>
+    <br>  
+      <div>
+        <label for="ifoto">Foto:</label>
+        <input type="file" name="foto" id="ifoto">
+      </div>
+    <br>  
+      <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </div>
+
+    </form>
+<!--VALUE no COLOR, configura a cor que será padrão, podendo ser qualquer cor desejada--> 
+<!--VALUE no RANGE, configura onde o controle fica como padrão-->   
+<!--Ao utilizar o Controle FILE (ENVIO de ARQUIVOS),não se pode usar o MÉTODO GET, mas usar o 
+    MÉTODO POST, pois passa de 3000 bytes, dessa forma os arquivos serão enviados.
+    A IMAGEM será enviada em forma de Arquivo ao back-end.-->
+</body>
+</html>
