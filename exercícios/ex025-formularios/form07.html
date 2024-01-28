@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Formulário-7</title>
+<style>
+   h2{
+   margin-left: 32%;
+   margin-bottom: 50px;
+   }
+
+   #right{
+    float: right;
+    margin-top: -19px;
+    margin-right: 500px;
+   }
+
+   #left{
+    margin-left: 250px;
+   }
+
+   .input{
+    margin-top: 20px;
+    margin-left: 485px;
+   }
+</style>
+</head>
+<body>
+    <h2>Testes com Formulários</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div id="left">
+            <label for="iuf">Estado:</label>
+            <select name="uf" id="iuf">
+                <option value="" selected>Escolha</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </select>
+        </div>
+
+        <div id="right">
+            <label for="iuf">Estado:</label>
+            <select name="uf" id="iuf">
+                <option value="" selected>Região</option>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </div>
+        
+        </div>       
+        
+        <div class="input">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+<!--Não funcionou.....................................................................................
+    <form action="cadastro.php" method="get">
+        <label for="browser">Escolha o navegador</label>
+        <input list="navegador" name="navegador" id="navegador">
+        <datalist id="navegador">
+          <option value="Edge">Edge</option>
+          <option value="Opera">Opera></option>
+          <option value="Chrome">Chrome</option>
+          <option value="Safari">Safari</option>
+          <option value="Firefox">Firefox</option>
+        </datalist>
+        <input type="submit">
+    </form>
+...................................................................................................-->
+</body>
+</html>
