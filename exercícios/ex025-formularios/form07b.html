@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>DATALIST</title>
+<style>
+    body{
+        margin-top: 30px;
+        margin-left: 500px; 
+    }
+    label{
+        color: chartreuse;
+        background: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    input{
+        margin-top: 9px;
+        background-color: aquamarine;
+        border-radius: 5px;
+    }
+    div input{
+        background-color: silver;
+        margin-top: 15px;
+    }
+</style>
+</head>
+<body>
+<!--DATALIST é usada para definir uma Lista de Opções para um Input-->
+<!--O ID do DATALIST  é usado no Atributo List do INPUT para vinculação-->
+<!--O ID é um Atributo Global -->
+  <label for="options">Linguagens de Programação: </label>
+<br>
+  <input type="text" list="options">
+    <datalist id="options">
+       <option>PHP</option>
+       <option>JavaScript</option>
+       <option>Laravel</option>
+       <option>Boostrap</option>
+       <option>MySQL</option>
+    </datalist>
+<br>
+  <div>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+  </div>
+</body>
+</html>
