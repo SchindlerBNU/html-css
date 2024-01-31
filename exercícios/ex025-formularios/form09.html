@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>RANGE + OUTPUT</title>
+</head>
+<body>
+    <h2>Range com Output</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5"
+            oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </div>
+    </form>
+</body>
+<!--RANGE cria a BARRA de CONTROLE-->
+<!--OUTPUT cria a NUMERAÇÃO para a Barra de Controle-->
+</html>
