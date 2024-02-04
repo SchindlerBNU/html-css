@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*Configuração para todas as demais Mídias*/
+
+/*Typical Device Breakpoints:
+Pequenas Telas: até 600px
+-Celular: 600 a 768px
+-Tablet: 769 a 992px
+-Desktop: 993 a 1200px
+-telas Grandes (TV): acima de 1201px
+*/
+/*@media screen para pequenas telas e celulares não será feito, pois as configurações para estes 
+  dispositivos já estão criados no Arquivo CSS/style.css (Mobile First)*/
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        /*background-image: url("../imagens/back-print.jpg"); na impressão, não sai o background*/
+}
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    /*melhor aplicar no footer, é mais configurável*/
+    main::after{
+        content: 'Conteúdo criado por SWD - Schindler Web Designer';
+        font-size: 0.5em;
+    }
+
+    main h2{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    main{
+        width: 400px;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+ 
+@media screen and (min-width: 993px) and (max-width: 1200px){
+
+    body{
+        background-image: url("../imagens//back-pc.jpg");
+    }
+
+    main{
+        width: 600px;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url("../imagens/back-tv.jpg");
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+}

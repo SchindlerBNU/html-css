@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*Configurações para Mobile First*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*inclui a borda no tamanho total do elemento*/
+}
+/*se as barras de rolagem não sumirem, */
+html, body{
+    width: 100vw; /*se manter a rolagem horizontal, zerar o width*/
+    height: 100vh;
+}
+
+body{
+    background-color: #808000;
+    background-image: url(../imagens/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*para preencher o viewport todo*/
+    background-position: center center; /*centraliza a imagem com a figura principal*/
+}
+
+main{
+    background-color: #eee8aa52;
+    width: 80vw;
+    margin: auto; /*centraliza o MAIN*/
+    border-radius: 10px;
+    padding: 10px; /*Espaçamento Interno*/
+}
+
+h2{
+   font-size: 0.8em;
+   color: rgb(2, 250, 2);
+   text-align: center;
+   text-shadow: 2px 2px 2px black;
+   background-color: #808000a4;
+   border-radius: 10px;
+
+}
+
+img{
+    margin: auto;
+}
+
+img#phone{display: block;}
+img#tablet{display: none;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
+/*o DISPLAY: NONE faz com que essas imagens não apareçam no viewport*/
+/*para que a imagem reapareça no site, DISPLAY: BLOCK*/
