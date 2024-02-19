@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEXBOX 1</title>
+<style>
+    body{
+        background-color: rgb(165, 164, 164);
+    }
+    div.container{
+        background-color: rgb(3, 237, 245); 
+        /*height: 90vh;*/
+        display: flex; 
+    }
+    div.item{
+        background-color: chartreuse; 
+        border: 1px solid black;
+        text-align: center;
+        flex: auto; /*preenche toda a div PAI com as DIVs FILHAS*/
+    }
+</style>
+</head>
+<body>
+    <div class="container"><!---------ELEMENTO PAI------>
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div><!-----ELEMENTOS FILHOS-->
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+</body>
+<!--FLEXBOX - CONFIGURAÇÕES BÁSICAS
+   *Elemento PAI deve estar com DISPLAY: FLEX.
+   *Elemento(s) FILHO(s) deve(em) estar com FLEX: AUTO.-->
+</html>
