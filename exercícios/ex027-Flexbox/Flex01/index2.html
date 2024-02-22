@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEX-DIRECTION</title>
+<style>
+   body{
+        background-color: rgb(165, 164, 164);
+    }
+    div.container{
+        background-color: rgb(3, 237, 245); 
+        /*height: 90vh;*/
+        display: flex; 
+        flex-direction: row;
+    }
+    div.item{
+        background-color: chartreuse; 
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+    div#image{
+        margin-left: 210px;
+    }
+    
+</style>
+</head>
+<body>
+    
+    <div class="container"><!---------ELEMENTO PAI------>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div><!-----ELEMENTOS FILHOS-->
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+    <div id="image">
+        <img src="flexdirection-row.png" alt="imagem de FlexBox" height="560">
+    </div>
+   
+</body>
+<!--FLEX-DIRECTION
+   *Configuração feita no Elemento PAI
+    -Configuração Linha Padrão (Flex-Direction: ROW (LINHA)) Sentido Left - Right
+    -Configuração Linha Reversa (Flex-Direction: ROW-REVERSE) Sentido Right - Left
+    -Configuração Coluna (Flex-Direction: COLUMN) Sentido Top - Bottom
+    -Configuração Coluna Reversa (Flex-Direction: COLUMN-REVERSE) Sentido Bottom - Top-->
+<!--Flex-Direction: Row-Reverse é interessante em MENUS-->
+<!--ESTUDO DOS EIXOS (AXIS)
+   1º Eixo criado, automaticamente(padrão) é o EIXO PRINCIPAL (MAIN-AXIS)
+   .O MAIN-AXIS gera 2 pontos no Eixo:
+   -MAIN-START (Ponto Inicial)
+   -MAIN-END (Ponto Final)
+   2º Eixo criado, automaticamente(padrão é o EIXO TRANSVERSAL(CROSS-AXIS)
+   .O CROSS-AXIS gera 2 pontos no Eixo:
+   -CROSS-START (Início Cruzado)
+   -CROSS-END (Extremidade Cruzado)-->
+   
+   <!--RESUMÃO DE MAIN-AXIS(MA) e CROSS-AXIS(CA)
+      
+    *MAIN-AXIS - Eixo Principal (MA)
+      -Flex-Direction: ROW (MA=Horizontal=Left to Right)
+      -Flex-Direction: ROW-REVERSE (MA=Horizontal=Right to Left)
+      -Flex-Direction: COLUMN (MA=Vertical=LAdo Esquerdo=Top to Bottom)
+      -Flex-Direction: COLUMN-REVERSE (MA=Vertical=Lado Direito=Bottom to Top)
+     
+      *CROSS-AXIS - Eixo Transversal (CA)
+      -Flex-Direction: ROW (CA=Vertical=LAdo Direito=Top to Bottom)
+      -Flex-Direction: ROW-REVERSE (CA=Vertical=Lado Esquerdo= Top to Bottom)
+      -Flex-Direction: COLUMN (CA=Superior Horizontal=Left to Right)
+      -Flex-Direction: COLUMN-REVERSE (CA=Inferior Horizontal=Right to Left)-->
+</html>

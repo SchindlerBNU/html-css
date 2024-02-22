@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEX-DIRECTION / FLEX-WRAP</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+    h1{
+        text-align: center;
+        color: rgb(48, 2, 156);
+    }
+    h2{
+        text-align: center;
+        color: rgb(80, 1, 1);
+    }
+
+
+    div.container{
+        background-color: rgb(151, 3, 170);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    div.item{
+        background-color: blue;
+        text-align: center;
+        color: aliceblue;
+        border: 1px solid rgb(0, 0, 44);
+    }
+
+
+    div.container1{
+        background-color: rgb(42, 3, 148);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.item1{
+        background-color: rgb(255, 0, 234);
+        text-align: center;
+        color: aliceblue;
+        border: 1px solid rgb(44, 0, 35);
+    }
+
+
+    div.container2{
+        background-color: rgb(30, 117, 3);
+        display: flex;  
+        flex-direction: row;  
+        flex-wrap: wrap-reverse ;
+    }
+    div.item2{
+        background-color: rgb(117, 44, 2);
+        text-align: center;
+        color: aliceblue;
+        border: 1px solid rgb(2, 153, 77);
+    }
+
+
+   div.container3{
+        background-color: rgb(30, 117, 3);
+        display: flex;  
+        flex-direction: row-reverse;  
+        flex-wrap: wrap-reverse ;
+    }
+    div.item3{
+        background-color: rgb(117, 2, 111);
+        text-align: center;
+        color: aliceblue;
+        border: 1px solid rgb(80, 2, 153);
+    }
+
+    div.container4{
+        background-color: rgb(117, 3, 22);
+        display: flex;  
+        flex-direction: row-reverse;  
+        flex-wrap: wrap ;
+    }
+    div.item4{
+        background-color: rgb(2, 29, 117);
+        text-align: center;
+        color: aliceblue;
+        border: 1px solid rgb(2, 105, 153);
+    }
+
+    div.container5{
+        background-color: rgb(39, 117, 3);
+        display: flex;  
+        flex-direction: row-reverse;  
+        flex-wrap: wrap-reverse;
+    }
+    </style>
+<body>
+       <h1>FLEX-DIRECTION ROW</h1>
+        <h2>FLEX-WRAP: NOWRAP (Não Quebre)</h2>
+    <div class="container"><!---------ELEMENTO PAI------>
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div><!-----ELEMENTOS FILHOS-->
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+<br>
+        <h2>FLEX-WRAP: WRAP (Quebre)</h2>
+    <div class="container1"><!---------ELEMENTO PAI------>
+        <div class="item1">Exemplo de Bloco A</div>
+        <div class="item1">Exemplo de Bloco B</div><!-----ELEMENTOS FILHOS-->
+        <div class="item1">Exemplo de Bloco C</div>
+        <div class="item1">Exemplo de Bloco D</div>
+        <div class="item1">Exemplo de Bloco E</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+<br>
+        <h2>FLEX-WRAP: WRAP-REVERSE(Quebra Reversa)</h2>
+    <div class="container2"><!---------ELEMENTO PAI------>
+        <div class="item2">Exemplo de Bloco A</div>
+        <div class="item2">Exemplo de Bloco B</div><!-----ELEMENTOS FILHOS-->
+        <div class="item2">Exemplo de Bloco C</div>
+        <div class="item2">Exemplo de Bloco D</div>
+        <div class="item2">Exemplo de Bloco E</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+    
+<br>
+<br>
+    <h1>FLEX-DIRECTION ROW-REVERSE</h1>
+        <h2>FLEX-WRAP: WRAP-REVERSE(Quebra Reversa)</h2>
+    <div class="container3"><!---------ELEMENTO PAI------>
+        <div class="item3">Exemplo de Bloco A</div>
+        <div class="item3">Exemplo de Bloco B</div><!-----ELEMENTOS FILHOS-->
+        <div class="item3">Exemplo de Bloco C</div>
+        <div class="item3">Exemplo de Bloco D</div>
+        <div class="item3">Exemplo de Bloco E</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+
+<br>
+    <h2>FLEX-WRAP: WRAP (Quebre)</h2>
+    <div class="container4"><!---------ELEMENTO PAI------>
+        <div class="item4">Exemplo de Bloco A</div>
+        <div class="item4">Exemplo de Bloco B</div><!-----ELEMENTOS FILHOS-->
+        <div class="item4">Exemplo de Bloco C</div>
+        <div class="item4">Exemplo de Bloco D</div>
+        <div class="item4">Exemplo de Bloco E</div>
+    </div><!--------------------------CLASSE CONTAINER-->
+
+</body>
+<!--FLEX-WRAP: NoWRAP
+   *Padrão = NOWRAP (não encapsule, não enpacote, NÃO QUEBRE)
+    ou seja, ao se aumentar o nº de item (filhos) dentro do elemento pai, 
+    os elementos filhos se compactarão para caberem dentro da mesma linha.
+    O encolhimentos dos itens, dentro de um flexbox, dependerá da capacidade de
+    encolhimento dele, depende do conteúdo.
+    Se for um texto com palavras muito extensas, o item ficará do tamanho da palavra 
+    mais extensa-->
+
+<!--FLEX-WRAP: WRAP
+   *Ao diminuir o Elemento Pai, o último elemento filho (bloco) será quebrado no 
+    sentido do Eixo Transversal (CROSS-AXIS).
+   *No caso de Flex-Direction: ROW, o último elemento será quebrado para baixo e à esquerda.-->
+
+<!--FLEX-WRAP: WRAP-REVERSE
+   *Quando o Elemento Pai for diminído, o último elemento filho (bloco), será quebrado no sentido
+    oposto ao Eixo Transversal (CROSS-AXIS).
+   *No caso de Flex-Direction: Row e Flex-Wrap: Wrap-Reverse, o último elemento filho será
+    quebrado para cima e à esquerda.-->
+</html>

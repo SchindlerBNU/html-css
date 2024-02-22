@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEX-FLOW</title>
+<style>
+    body{
+        background-color: gray;
+    }
+    h1{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+    }
+    P{
+        font-size: 1.5em;
+        font-weight: 800;
+        color: rgb(97, 1, 1);
+    }
+    p > span{
+        color: blue;
+    }
+
+
+    div.container{
+        background-color: green;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    div.item{
+        background-color: aqua;
+        border: 1px solid blue;
+        text-align: center;
+        flex: auto;
+    }
+
+    div.container1{
+        background-color: green;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    div.item1{
+        background-color: aqua;
+        border: 1px solid blue;
+        text-align: center;
+        flex: auto;
+    }
+
+    div.container2{
+        background-color: green;
+        display: flex;
+        flex-flow: row wrap-reverse;
+    }
+    div.item2{
+        background-color: aqua;
+        border: 1px solid blue;
+        text-align: center;
+        flex: auto;
+    }
+
+    div.container3{
+        background-color: green;
+        height: 50px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    div.item3{
+        background-color: aqua;
+        border: 1px solid blue;
+        text-align: center;
+        flex: auto;
+    }  
+</style>
+</head>
+<body>
+    <h1>FLEX-DIRECTION + FLEX-WRAP = FLEX-FLOW</h1>
+    <p>Flex-Direction: <br>ROW, ROW-REVERSE, COLUMN e COLUMN-REVERSE <br>
+                       <span>Linha, Linha-Reversa, Coluna e Coluna-Reversa</span></P>
+    <p>Flex-Wrap: <br> NOWRAP, WRAP e WRAP-REVERSE <br>
+                       <span>Sem-Quebra, Quebra e Quebra-Reversa</span></p>
+<br>
+    
+        <h2>Configuração PADRÃO</h2>
+        <p>Flex-Direction: Row <br>
+           Flex-wrap: NoWrap</p>
+        <h2>Configuração PADRÃO SHORTHAND</h2>
+        <p>Flex-Flow: Row NoWrap</p>
+   
+
+    <div class="container">
+       <div class="item">Exemplo de Bloco A</div>
+       <div class="item">Exemplo de Bloco B</div>
+       <div class="item">Exemplo de Bloco C</div>
+       <div class="item">Exemplo de Bloco D</div>
+       <div class="item">Exemplo de Bloco E</div>
+       <div class="item">Exemplo de Bloco F</div>
+       <div class="item">Exemplo de Bloco G</div>
+    </div>
+
+    <h2>Configuração QUEBRA SHORTHAND</h2>
+    <p>Flex-Flow: Row Wrap</p>
+    <div class="container1">
+        <div class="item1">Exemplo de Bloco A</div>
+        <div class="item1">Exemplo de Bloco B</div>
+        <div class="item1">Exemplo de Bloco C</div>
+        <div class="item1">Exemplo de Bloco D</div>
+        <div class="item1">Exemplo de Bloco E</div>
+        <div class="item1">Exemplo de Bloco F</div>
+        <div class="item1">Exemplo de Bloco G</div>
+     </div>
+
+     <h2>Configuração QUEBRA-REVERSA SHORTHAND</h2>
+    <p>Flex-Flow: Row Wrap-Reverse</p>
+    <div class="container2">
+        <div class="item2">Exemplo de Bloco A</div>
+        <div class="item2">Exemplo de Bloco B</div>
+        <div class="item2">Exemplo de Bloco C</div>
+        <div class="item2">Exemplo de Bloco D</div>
+        <div class="item2">Exemplo de Bloco E</div>
+        <div class="item2">Exemplo de Bloco F</div>
+        <div class="item2">Exemplo de Bloco G</div>
+     </div>
+
+     <h2>Configuração QUEBRA SHORTHAND COLUMN</h2>
+    <p>Flex-Flow: Column Wrap</p>
+    <div class="container3">
+        <div class="item3">Exemplo de Bloco A</div>
+        <div class="item3">Exemplo de Bloco B</div>
+        <div class="item3">Exemplo de Bloco C</div>
+        <div class="item3">Exemplo de Bloco D</div>
+        <div class="item3">Exemplo de Bloco E</div>
+        <div class="item3">Exemplo de Bloco F</div>
+        <div class="item3">Exemplo de Bloco G</div>
+     </div>
+</body>
+<!--FLEX: AUTO = Só funciona no Elemento Filho.
+   *A função do Flex: Auto é não deixar espaço vazio no Elemento Pai.
+    Ele preenche todo o espaço disponível no Elemento Pai.-->
+
+<!--FLEX-DIRECTION: COLUMN E FLEX-WRAP: WRAP-REVERSE
+   *Para se ver sua funcionalidade, deve-se diminuri o HEIGHT, o que fará com que as Colunas 
+    sejam quebradas.-->
+</html>
