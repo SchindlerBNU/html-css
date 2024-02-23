@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FlexBox</title>
+<style>
+    body{
+        background-color: rgb(117, 193, 196);
+    }
+    h1{
+        text-align: center;
+        color: rgb(145, 135, 1);
+    }
+    div.container{
+        background-color: indianred;
+        border: 1px solid rgb(44, 1, 1);
+        display: flex;
+        flex-flow: row nowrap; /*Linha e Sem Quebra*/
+        justify-content: space-around;
+    }
+    div.item{
+        background-color: blue;
+        color: wheat;
+        border: 1px solid rgb(247, 2, 2);
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+      <h1>JUSTIFY-CONTENT E ALIGN-ITEMS</h1>
+       <h3>Será Estudado o Alinhamento dos Elementos Filhos nos 2 Eixos <br>
+           *Main-Axis (Eixo Principal)------JUSTIFY-CONTENT-----------<br>
+           *Croos-Axis (Eixo Transversal)---ALIGN-ITEMS-----------------<br>
+        </h3>
+       _________________________________________________________________________________________________________________________________________________________________________
+        <h3>JUSTIFY-CONTENT: <br>
+            ------------------------------<br> 
+            Fará o Alinhamento em Relação ao Eixo Principal (Main-Axis) <br>
+            ----------------------------------------------------------------------------------- <br>
+            VALORES do JUSTIFY-CONTENT: Flex-Start (Alinhamento será do MAIN-START ao MAIN-END) <br>
+                                        Flex-End (Alinhamento será do MAIN-END ao MAIN-START) <br>
+                                        Center (Alinhamento será centralizado, entre o Main-Start e Main-End)<br>
+                                        Space-Between (1º Item para o Main-Start o Último Item para o MAin-End.
+                                                       os outros Itens serão espaçados entre o 1º e o Último) <br>
+                                        Space-Evenly (O Espaçamento entre os Itens será igual, e os 1º e Último
+                                                       Itens não estarão grudados no Main-Start e Main-End,
+                                                        respectivamente) <br>
+                                        Space-Around (O espaço útil do Elemento PAI será dividido pelo nº de
+                                                      Elementos Filhos, em espaçamentos iguais e centralizar os 
+                                                       Elementos Filhos)
+        </h3>
+    <div class="container">
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+     </div>
+</body>
+<!--ANATOMIA DO ELEMENTO PAI = CLASS CONTAINER:
+   *Ele que contém todos os ITENS (Elementos Filhos)
+   *O Elemento PAI irá ditar o comportamento dos Elementos FILHOS-->
+<!--JUSTIFY-CONTENT e ALIGN-ITEMS:
+   *São Propriedades CSS utilizadas no Elemento PAI-->
+<!--FLEX-FLOW é abreviação de Flex-Direction e Flex-Wrap, respectivamente-->
+<!--Main-Axis e Cross Axis na Configuração Row e Nowrap:
+   *Main-Axis=Superior/Esquerda para a Direita
+   *Cross-Axis=Lateral Esquerda/Topo para a Base-->
+</html>

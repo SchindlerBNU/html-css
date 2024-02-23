@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEXBOX</title>
+<style>
+    *{
+        background-color: darkslateblue;
+        color: whitesmoke;
+    }
+    div.container{
+        background-color: crimson;
+        height: 200px;
+        display: flex;
+        flex-flow: row nowrap; 
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.item{
+        background-color: chartreuse;
+        border: 1px solid black;
+        text-align: center;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <h1>ALIGN-ITEMS</h1>
+     <h3>O Alinhamento dos Elementos Filhos pelo Align-Items <br>
+         é baseado pelo CROSS-AXIS (Eixo Transversal)</h3>
+    
+    <h3>VALORES DO ALIGN-ITEMS:
+       *Stretch (Padrão) = os items são esticados no Eixo Transversal (CROSS-AXIS)
+       *Flex-Start = os ITEMS são posicionados no CROSS-START 
+       *Flex-End = os ITEMS são posicionados no CROSS-END
+       *Center = os ITEMS são posicionados no centro do Eixo Transversal 
+    </h3>
+    <h3>Para entender o Align-Items, deve-se aumentar a alturado container (Elemento PAI)</h3>
+
+    <div class="container">
+        <div class="item">Bloco A</div>
+        <div class="item">Bloco B</div>
+        <div class="item">Bloco C</div>
+        <div class="item">Bloco D</div>
+        <div class="item">Bloco E</div>
+        <div class="item">Bloco F</div>
+        <div class="item">Bloco G</div>
+     </div>
+</body>
+<!--Flex = Flex-Direction e Flow = Flex-Wrap-->
+<!--Justify-Content = É uma Propriedade de ESPAÇAMENTO dos Elementos FILHOS dentro do Elemento PAI 
+                      Existem vários valores.-->
+<!--O HEIGHT é usado para se ver melhor a ação da Propriedade Align-Items: Stretch-->
+</html>
