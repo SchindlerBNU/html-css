@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" >
+    <title>JustifyContent + AlignItems</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #3f0e0e;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        color: #a8a083;
+        text-align: center;
+    }
+    main{
+        border: 6px solid #a8a083;
+        width: 97vw;
+        height: 92vh;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center; /*centraliza pelo MAIN-AXIS*/
+        align-items: center; /*centraliza pelo CROSS-AXIS*/
+    }
+    h2{
+        color: rgb(148, 0, 0);
+        text-align: center;
+        line-height: 300px;
+    }
+    section{
+        background-color: #a8a083;
+        border: 6px solid rgb(22, 0, 0);
+        width: 300px;
+        height: 300px;
+    }
+</style>
+</head>
+<body>
+    <h1>Flexbox Centralizado</h1>
+
+    <main>
+        <section>
+            <h2>Login Flexbox</h2>
+        </section>
+    </main>
+    
+</body>
+</html>
