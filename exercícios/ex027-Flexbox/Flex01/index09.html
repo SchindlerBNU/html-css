@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>ALIGN-CONTENT</title>
+<style>
+    body{
+        background-color: black; 
+        color: black;
+        font-family: Arial, Helvetica, sans-serif; 
+        box-sizing: border-box;  
+    }
+    h1{
+        color: #00ff00;
+        text-align: center;
+        font-size: 2em;
+    }
+    p{
+        background-color: #ff00ff;
+        color: black;
+        border: 6px solid #ff00ff;
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    main{
+        border: 6px solid #00ff00;
+        width: 95vw;
+        height: 70vh;
+        margin: auto;
+    }
+    div.container{
+        background-color: blue;
+        display: flex;
+        flex-flow: row wrap;
+        /*align-items: flex-start; /*alinha pelo cross-axis*/ 
+        align-content: stretch; /*valor padrão, mantendo o mesmo aspecto do height: 400px*/
+        height: 400px; /*essa propriedae mantém espaços entre os filhos na quebra*/
+    }
+    div.item{
+        background-color: #ff00ff;
+        border: 3px solid blue;
+        text-align: center;
+        padding: 40px; /*para aumentar as dimensões dos filhos, para exemplificar a quebra*/
+    }
+</style>
+</head>
+<body>
+    <h1>PROPRIEDADE ALIGN-CONTENT</h1>
+     <p>Usada para alinhar os Elementos Filhos pelo Cross-Axis, com valor Flex-Wrap: Wrap.</p>
+     
+    <main>
+        <div class="container">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+            <div class="item">H</div>
+            <div class="item">I</div>
+            <div class="item">J</div>
+            <div class="item">K</div>
+            <div class="item">L</div>
+        </div>
+    </main>
+<!--ALIGN-CONTENT alinha os Elementos Filhos pelo Cross-Axis, no valor WRAP-->
+<!--ALIGN-CONTENT não deve ser usado em conjunto???-->
+<!--O HEIGHT deverá ser configurado, no caso de usar Flex-direction: row-->
+<!--O WIDTH deverá ser configurado, no caso de usar Flex-Direction: column-->
+</body>
+</html>
