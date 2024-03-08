@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEXBOX</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(9, 17, 32);
+        padding: 10px;
+    }
+    h1{
+        color: chartreuse;
+        text-align: center;
+        padding: 10px;
+    }
+    .um{
+        border: 3px solid chartreuse;
+        color: whitesmoke;
+    }
+    #titulo1{
+        color: #ff00ff;
+        text-align: center;
+        padding: 10px;
+    }
+    .um > p{
+        margin-left: 10px;
+        padding: 5px;
+    }
+    #para1{
+        color: #00ff00;
+    }
+    .dois{
+        border: 3px solid chartreuse;
+        color: whitesmoke;
+    }
+    h2{
+        color: #ff00ff;
+        text-align: center;
+    }
+    section.dois{
+        display: flex;
+        flex-direction: row;
+    }
+    div.container{
+        background-color: bisque;
+    }
+    div.item{
+        background-color: aqua;
+        border: 1px solid blue;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>FLEX-BASIS - Aplicado ao Elemento-Filho</h1>
+   <section class="um">
+     <p id="titulo1"><strong>VALORES DA PROPRIEDADE FLEX-BASIS:</strong></p>
+     <p> <hr>
+       <p id="para1"> *Flex-Basis: AUTO (padrão) </p>
+         - O tamanho do Elemento, no seu Main-Axis, é ditada através do tamanho do seu conteúdo. <br> 
+         - O tamanho se refere ao conteúdo interno do Elemento-Filho, individualmente. <br> 
+         - Se no 1º Elemento-Filho tiver a Letra 'A', o Elemento-Filho será de uma largura que caiba esse 'A'. <br> 
+         - Se no 2º Elemento-Filho tiver várias Letras, 'ABCDEFG', o Elemento-Filhoserá mais largo. <br> 
+         - Se diminuir o Elemento-Pai, os Elementos-Filhos se encolherão também, se não estiverem configurados <br> 
+           com Flex-Wrap: Wrap. <br> 
+         - Se aumentar o Elemento-Pai, os Elementos-Filhos nõa crescerão juntos, érmanecendo no tamanho padrão.
+    </p>
+<br> <hr>
+    <p>
+        <p id="para1"> *Flex-Basis: 200px (pode ser outros valores numéricos)</p>
+          - Todos os Elementos-Filhos terão a Largura de 200px (Row) e Altura de 200px (Column). <br>
+          - Com o Valor Fixo, o Elemento-Filho não se adaptará ao conteúdo do Elemento-Filho. <br>
+          - Pode-se alterar a configuração do tamanho de cada Elemento-Filho com a Classe ou ID. <br>
+          - Se não houver espaço físico no Elemento-Pai para comportar todos os Elementos-Filhos com 200px, <br>
+            todos eles se adaptarão ao tamanho igualmente. <br>
+          - O Flex-Basis substitui o WIDTH (Row) e HEIGHT(Column).
+    </p>
+   </section>
+   <main>
+     <h2>EXERCÍCIOS</h2> <br>
+      <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+      </div>
+    </main>
+</body>
+</html>

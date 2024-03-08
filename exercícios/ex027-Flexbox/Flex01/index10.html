@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEXBOX (ALIGN-SELF)</title>
+<style>
+    body{
+        background-color: #240000;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    h1{
+        text-align: center;
+        color: #00ff00;
+    }
+    h3{
+        text-align: center;
+        color: #00b6b6;
+        line-height: 0px;
+    }
+    div.textos{
+        background-color: #110e0e;
+        border: 4px solid #01fc01;
+    }
+    p{
+        text-align: center;
+        color: yellow;
+    }
+    hr{
+        border: 2px solid #01fc01;
+    }
+    strong{
+        color: #00ff00;
+        font-size: 1.2em;
+    }
+    div.main{
+        border: 4px solid rgb(129, 2, 91); 
+    }
+    div.container{
+        background-color: #017070;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    div.item{
+        background-color: #00ff00;
+        border: 1px solid rgb(1, 63, 1);
+        text-align: center;
+        padding: 20px;
+    }
+    #i1{
+        order: 0;
+    }
+    #i2{
+        order: -2;
+    } 
+    #i3{
+        order: 4;
+    }
+    #i4{
+        order: 8;
+    }
+    #i6{
+        order: 2;
+    }
+    #i6{
+        order: 0;
+    }
+    #i7{
+        order: -4;
+    }
+    div.container2{ 
+        background-color: bisque;
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    } 
+    #item1{
+        align-self: flex-end;
+    }
+    #item2{
+        align-self: center;
+    }
+    #item3{
+        align-self: stretch;
+    }
+    #item4{
+        align-self: flex-start;
+    }
+    #item5{
+        align-self: center;
+    }
+    #item6{
+        align-self: auto; /*ou INHERIT*/
+    }
+    #item7{
+        align-self: stretch;
+    }
+
+</style>
+</head>
+<body>
+    <h1>ORDER e ALIGN-SELF</h1>
+
+    <div class="textos">
+      <p>
+        <strong>Propriedade ALIGN-SELF</strong> <br>Alinha Itens-Flex (Elementos Filhos) sobreescrevendo o valor Align-Items.  
+        Se alguma das Margens do Item-Flex (Elemento Filho) estiver configurado com <br>Valor = Auto,
+        o Align-Self é Ignorado. 
+      </p>
+      <p>
+        <strong>ALIGN-SELF:</strong> <br>
+        Se aplica a cada um dos ITEMS (Elementos Filhos). <br>
+        Funciona diretamente no Cross-Axis (Eixo-Transversal). <br>
+        Só é aplicável no Elemento-Filho. <br> <br>
+        <strong>Valores do Align-Self:</strong><br>
+        *AUTO - Herda a característica de Alinhamento Vertical (Cross-Axis) do PAI.
+        *FLEX-START - Alinhamento no Cross-Start. 
+        *FLEX-END - Alinhamento no Cross-End. 
+        *CENTER - Alinahdo ao Centro do ELemento-Pai. 
+        *STRETCH - Espicha o ITEM para que ocupe todo o espaço do Cross-Axis
+      </p>
+      <p>
+        Ao se criar Containers Flexbox, a parte externa (Elemento PAI) é FLEX, e a parte interna (Elemento Filho)
+        NÃO é FLEX.
+        Porém, é possível configurar um ou vários Elementos Filhos <br> e os tornar também Container.
+        Dessa forma, teremos uma Caixa Flexível PAI e em seu interior teremos Elementos-Flexíveis
+      </p>
+    <hr>
+      <p>
+       <strong> Propriedade ORDER </strong><br>
+        <strong>></strong>Todo Elemento Filho (ITEM) possui ORDER com Valor: 0 (PADRÃO) <br>
+        <strong>></strong>Ao se colocar valores diferentes em cada Elemento Filho existente dentro do 
+        Elemento PAI, como: <br> Order: 3, Order: 5, Order: -2, Order: 0, <br>o CSS irá reorganizá-los em ordem crescente.
+        <br>Assim, os ELementos Filhos ficarão: -2, 0, 3 e 5.
+      </p>
+    <hr>
+      <p><strong>Propriedade Flex: Auto</strong> <br> É aplicada aos Elementos Filhos</p>
+    </div>
+<br>
+    <div class="main">
+        <h3>Aplicado Propriedade ORDER com o ID</h3>
+       <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+      </div>
+    </div>
+<br>
+<div class="main">
+    <h3>Aplicado Propriedade ALIGN-SELF com 2 CLASSES</h3>
+   <div class="container2">
+    <div class="item" id="item1">A</div>
+    <div class="item" id="item2">B</div>
+    <div class="item" id="item3">C</div>
+    <div class="item" id="item4">D</div>
+    <div class="item" id="item5">E</div>
+    <div class="item" id="item6">F</div> <!--Herda o Valor do Align-Items, neste caso = Flex-Start-->
+    <div class="item" id="item7">G</div>
+  </div>
+</div>
+<br><br>
+</body>
+</html>
