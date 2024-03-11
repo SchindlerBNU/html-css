@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body{
+    background-color: #553838;
+}
+h1{
+    color: aqua;
+   text-align: center;
+}
+div.flexbox1{
+    background-color: aqua;
+    
+    display: flex;
+    flex-flow: row wrap;     
+}
+div.item{
+    background-color: chartreuse;
+    color: red;
+    border: 1px solid black;
+    text-align: center;   
+    flex-basis: 300px;  
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+div.flexbox2{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item2{
+    background-color: burlywood;
+    font-weight: 700;
+    color: blue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+#dois{
+    background-color: cadetblue;
+    flex-grow: 1;
+}
+div.flexbox3{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item3{
+    background-color: burlywood;
+    font-weight: 900;
+    color: blue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+#um1{
+    background-color: blue;
+    color: black;
+    flex-grow: 0;  
+}
+#dois2{
+    background-color: chartreuse;
+    color: black;
+    flex-grow:1;
+}
+#tres3{
+    background-color: red;
+    color: black;
+    flex-grow: 2;
+}
+div.flexbox4{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item4{
+    background-color: burlywood;
+    font-weight: 900;
+    color: blue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+#um2{
+    background-color: blue;
+    color: black;
+    flex-grow: 0;  
+}
+#dois3{
+    background-color: chartreuse;
+    color: black;
+    flex-grow:2;
+}
+#tres4{
+    background-color: red;
+    color: black;
+    flex-grow: 2;
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(48, 48, 136);
+}
+
+.flexbox{
+    background-color: rgb(201, 185, 95);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item{
+    background-color: rgb(230, 3, 211);
+    border: 1px solid rgb(33, 252, 4);
+    text-align: center;
+    flex-basis: 300px;
+}
+
+#cxA{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#cxB{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#cxC{
+    flex-grow: 4;
+    flex-shrink: 2
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(85, 73, 73);
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+
+div.flexbox0{
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item0{
+    background-color: darkorange;
+    color: rgb(1, 1, 44);
+    border: 1px solid rgb(1, 11, 92);
+    flex-basis: 250px;
+}
+#pen1{
+    flex-shrink: 0; /*não encolhe*/
+}
+#pen2{
+    flex-shrink: 1; /*encolhe*/
+}
+#pen3{
+    flex-shrink: 0; /*não encolhe*/
+}
+
+
+div.flexbox1{
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item1{
+    background-color: darkorange;
+    color: rgb(1, 1, 44);
+    border: 1px solid rgb(1, 11, 92);
+    flex-basis: 250px;
+}
+#pen4{
+    flex-shrink: 2; /*encolhe*/
+}
+#pen5{
+    flex-shrink: 0; /*não encolhe*/
+}
+#pen6{
+    flex-shrink: 1; /*encolhe menos que o pen4*/
+}
+
+
+div.flexbox2{
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item2{
+    background-color: darkorange;
+    color: rgb(1, 1, 44);
+    border: 1px solid rgb(1, 11, 92);
+}
+#pen7{
+    text-align: center;
+    flex-basis: 150px;
+    flex-grow: 0; /*não cresce*/
+    flex-shrink: 1; /*encolhe*/
+}
+#pen8{
+    text-align: center;
+    flex-basis: 150px;
+    flex-grow: 2; /*cresce o dobro*/
+    flex-shrink: 0; /*não encolhe*/
+}
+#pen9{
+    text-align: center;
+    flex-basis: 150px;
+    flex-grow: 1; /*cresce*/
+    flex-shrink: 2; /*encolhe o dobro*/
+}

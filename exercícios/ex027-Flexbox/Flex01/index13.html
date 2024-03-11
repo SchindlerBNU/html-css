@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Flexbox - Propriedades</title>
+</head>
+
+<body>
+
+  <h1>FLEX-GROW e FLEX-SHRINK</h1>
+
+  <div class="flexbox1">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+
+<br><br>
+
+<h1>Flex-Grow: 1</h1>
+  <div class="flexbox2">
+    <div class="item2">Valor Grow: 0</div>
+    <div class="item2" id="dois">Valor Grow: 1</div>
+    <div class="item2">Valor Grow: 0</div>
+  </div>
+
+  <br><br>
+
+  <h1>Flex-Grow: 2</h1>
+  <div class="flexbox3">
+    <div class="item3" id="um1">Valor Grow: 0</div>
+    <div class="item3" id="dois2">Valor Grow: 1</div>
+    <div class="item3" id="tres3">Valor Grow: 2</div> 
+  </div>
+
+  <br><br>
+
+  <h1>Flex-Grow: 3</h1>
+  <div class="flexbox4">
+    <div class="item4" id="um2">Valor Grow: 0</div>
+    <div class="item4" id="dois3">Valor Grow: 2</div>
+    <div class="item4" id="tres4">Valor Grow: 2</div> 
+  </div>
+
+</body>
+
+<!--
+*FLEX-GROW = O Quanto pode CRESCER
+ - Define a habilidade de um Elemento-Filho (Flex-Item) de crescer.
+ - O valor é numérico e sem indicação de unidade.
+ - Permite aumentar a largura dos Elementos-Filhos para completar o espaço disponível no Main-Axis.
+
+ *FLEX-SHRINK = O Quanto pode ENCOLHER
+ - Controla a redução dos Elementos-Filhos.
+
+ *VALORES PADRÃO DO FLEX-GROW e FLEX-SHRINK
+ Flex-Grow: 0 e Flex-Shrink: 1 são os valores padrão
+ - Flex-Grow = 0 = Não Pode Crescer
+ - Flex-Shrink = 0 = Não Pode Encolher
+              Qualquer valor diferente de 0 e positivo = Pode Encolher
+               = 0 = Não Pode Encolher
+ *PROPORCIONALIDADE
+ - É importante configurar o Elemento-Pai (Container) com Flex-Wrap: NOWRAP.
+ - Crescer (Grow) e Diminuir (Shrink) dependerá se pode se os Elementos-Filhos podem de quebrar ou não.
+ - Se o Container for configurado com Flex-Wrap: Wrap, os Elementos-Filho não irão crescer e diminuir,
+   pois eles irão quebrar, passar para outra linha, quando não couberem mais na linha inicial.
+
+*IMPORTANTE:
+Se for necessário que os Elementos-Filhos sejam totalmente Flexíveis (Elásticos), ou seja, que diminuam até
+o seu limite e aumentem até o limite da tela (viewport), deve-se configurar Flex-Grow: 1 e Flex-Shrink: 1.  
+-->
+
+<!--
+*Ao usar Flex-Shrinks = 0 (que não pode encolher), pode-se configurar o Flex-Wrap: Wrap (para mudar de linha), ou
+*Usar Flex-Shrink = 1 (que pode encolher - valor padrão) junto com Flex-Wrap: NoWrap.
+
+*Ao usar Flex-Grow = 1 (que pode crescer)junto com Flex-Shrink = 1 (que pode encolher), o site se torna 
+totalmente flexível, acompanhando toda a variação do viewport.
+-->
+
+<!--
+*FLEX-GROW com Valor = 2 significa que o elemento irá crescer o dobro do valor do Flex-Basis.
+Com o Flex-Grow = 2, deve-se calcular a proporção, para que não estoure o Elemento-Pai.
+-->
+</html>
