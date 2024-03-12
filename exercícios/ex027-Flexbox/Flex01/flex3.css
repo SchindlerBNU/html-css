@@ -4,10 +4,16 @@ body{
     background-color: rgb(48, 48, 136);
 }
 
+h2{
+    color: rgb(255, 196, 0);
+    text-align: center;
+}
+
 .flexbox{
     background-color: rgb(201, 185, 95);
     display: flex;
     flex-flow: row nowrap;
+    transform: translateY(50px); /*movimenta o container na Vertical*/
 }
 
 .item{

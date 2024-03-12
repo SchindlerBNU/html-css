@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>FLEXBOX</title>
+<style>
+   body{
+    background-color: rgb(56, 7, 102);
+    color: rgb(221, 188, 138);
+    text-align: center;
+   }
+
+   .container0{
+    background-color: chartreuse;
+    display: flex;
+    flex-flow: row nowrap;
+   }
+   .item0{
+    background-color: rgb(70, 40, 1);
+    color: rgb(253, 253, 253);
+    border: 1px solid chartreuse;
+    text-align: center;
+   }
+   #cxA{
+    /*flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;*/
+
+    flex: 1 0 200px;
+   }
+   #cxB{
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;*/
+
+    flex: 1 1 200px;
+   }
+   #cxC{
+    /*flex-grow: 1;
+    flex-shrink: 8;
+    flex-basis: 200px;*/
+
+    flex: 1 8 200px;
+   }
+</style>
+</head>
+<body>
+    <h1>FLEX-AUTO</h1>
+    <h2>Propriedade aplicada no Elemento-Filho.</h2>
+    
+    <div class="container0">
+        <div class="item0" id="cxA">A</div>
+        <div class="item0" id="cxB">B</div>
+        <div class="item0" id="cxC">C</div>
+    </div>
+
+</body>
+<!--
+PRIMEIRA SHORTHAND PARA FLEX-GROW + FLEX-SHRINK + FLEX-BASIS = FLEX: Grow Shrink Basis
+- Flex-Grow: 0       (G)   |
+- Flex-Shrink: 1     (S)   |   FLEX: 0 1 150px;
+- Flex-Basis: 150px  (B)   |         G S B 
+-->
+
+<!--
+VALORES PADRÃO PARA GROW, SHRINK e BASIS 
+- Grow = 0 / Shrink = 1 / Basis = auto
+- Ao usar Flex 0 1 auto, que são os Valores Padrões de Grow, Shrink e Basis, pode-se substiruir por:
+  FLEX: INITIAL = que configura essas propriedades com seu valor padrão.
+-->
+
+<!--
+VALORES PARA GROW=0, SHRINK=0 e BASIS=AUTO - Deixam o Flexbox Rígido
+- Torna os Elementos-Filhos não flexíveis
+ .Eles não podem crescer
+ .Eles não podem diminuir
+ .O tamanho deles dependerá do tamanho do conteúdo
+- SHORTHAND para essa Configuração => FLEX: NONE (nada flexível)
+-->
+
+<!--
+VALORES PARA GROW=1, SHRINK=1 e BASIS=AUTO - (Deixam o Flexbox totalmente Flexível)
+- Torna os Elementos-Filhos Flexíveis
+ .Eles podem crescer
+ .Eles podem diminuir
+ .O tamanho deles dependerá do tamanho do conteúdo
+ - SHORTHAND para essa Configuração => FLEX: AUTO (Máximo de Flexibilidade que um Elemento-Filho pode ter)
+-->
+
+<!--
+UM SÓ VALOR NO SHORTHAND FLEX
+- FLEX: 3 = Significa que o Grow=3, Shrink=valor padrão=1 e Basis=valor padrão=auto
+-->
+</html>
